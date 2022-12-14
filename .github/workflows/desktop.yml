@@ -4,14 +4,6 @@ env:
   NODE_VERSION: 18
 
 on:
-  push:
-    branches: [ "main" ]
-    tags: [ "v*.*.*" ]
-  pull_request:
-    branches: [ "main" ]
-    tags: [ "v*.*.*" ]
-  schedule:
-    - cron: "30 9 * * 5"
   workflow_dispatch:
     inputs:
       environment:
@@ -85,7 +77,6 @@ jobs:
         with:
           script: |
             github.rest.repos.updateRelease({
-              configPath: 'desktop/tauri.conf.json',
               draft: false,
               prerelease: true,
               owner: context.repo.owner,
