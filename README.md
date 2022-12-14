@@ -1,9 +1,9 @@
-# proton
+# template-sveltekit-rust
 
-[![Clippy](https://github.com/scattered-systems/proton/actions/workflows/clippy.yml/badge.svg)](https://github.com/scattered-systems/proton/actions/workflows/clippy.yml)
-[![Desktop](https://github.com/scattered-systems/proton/actions/workflows/desktop.yml/badge.svg)](https://github.com/scattered-systems/proton/actions/workflows/desktop.yml)
-[![Docker](https://github.com/scattered-systems/proton/actions/workflows/docker.yml/badge.svg)](https://github.com/scattered-systems/proton/actions/workflows/docker.yml)
-[![Rust](https://github.com/scattered-systems/proton/actions/workflows/rust.yml/badge.svg)](https://github.com/scattered-systems/proton/actions/workflows/rust.yml)
+[![Clippy](https://github.com/FL03/template-sveltekit-rust/actions/workflows/clippy.yml/badge.svg)](https://github.com/FL03/template-sveltekit-rust/actions/workflows/clippy.yml)
+[![Desktop](https://github.com/FL03/template-sveltekit-rust/actions/workflows/desktop.yml/badge.svg)](https://github.com/FL03/template-sveltekit-rust/actions/workflows/desktop.yml)
+[![Docker](https://github.com/FL03/template-sveltekit-rust/actions/workflows/docker.yml/badge.svg)](https://github.com/FL03/template-sveltekit-rust/actions/workflows/docker.yml)
+[![Rust](https://github.com/FL03/template-sveltekit-rust/actions/workflows/rust.yml/badge.svg)](https://github.com/FL03/template-sveltekit-rust/actions/workflows/rust.yml)
 
 ***
 
@@ -18,7 +18,7 @@ Make sure you have rust installed on your host system
 #### *Clone the repository*
 
 ```bash
-git clone https://github.com/scattered-systems/proton
+git clone https://github.com/FL03/template-sveltekit-rust
 ```
 
 #### *Setup the environment*
@@ -40,19 +40,19 @@ Make sure you have docker installed on the target system
 #### *Pull the image*
 
 ```bash
-docker pull scsys/proton:latest
+docker pull jo3mccain/template-sveltekit-rust:latest
 ```
 
 #### *Build the image locally (optional)*
 
 ```bash
-docker buildx build --tag scsys/proton:latest .
+docker buildx build --tag jo3mccain/template-sveltekit-rust:latest .
 ```
 
 #### *Run the image*
 
 ```bash
-docker run -p 9000:9000 scsys/proton:latest
+docker run -p 9000:9000 jo3mccain/template-sveltekit-rust:latest
 ```
 
 ## Usage
